@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
-        <title>Portfólio</title>
-    </head>
-<body>
-
-    <form action="/pagina-processa-dados-do-form" method="post">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Formulario básico</title>
+  </head>
+  <body>
+    <form>
+      <fieldset id="shipping">
+        <legend>Endereço para envio</legend>
         <div>
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" />
+          <label for="name1">Nome: </label>
+          <input id="name1" name="name1" type="text" required>
         </div>
         <div>
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" />
+          <label for="address1">Endereço: </label>
+          <input id="address1" name="address1" type="text" required>
         </div>
         <div>
-          <label for="msg">Mensagem:</label>
-          <textarea id="msg"></textarea>
+          <label for="pcode1">Código Postal: </label>
+          <input id="pcode1" name="pcode1" type="number" required>
         </div>
-      </form>
-      
-    
-</body>
+      </fieldset>
+      <fieldset id="billing">
+        <legend>Endereço de Cobrança</legend>
+        <div>
+          <label for="billing-checkbox">Igual ao endereço de entrega:</label>
+          <input type="checkbox" id="billing-checkbox" checked>
+        </div>
+        <div>
+          <label for="name" class="billing-label disabled-label">Nome: </label>
+          <input id="name" name="name" type="text" disabled required>
+        </div>
+        <div>
+          <label for="address2" class="billing-label disabled-label">Endereço:
+          </label>
+          <input id="address2" name="address2" type="text" disabled required>
+        </div>
+        <div>
+          <label for="pcode2" class="billing-label disabled-label">Código
+            Postal: </label>
+          <input id="pcode2" name="pcode2" type="text" disabled required>
+        </div>
+      </fieldset>
+      <div><button>Enviar</button></div>
+    </form>
+  </body>
 </html>
