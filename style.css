@@ -2,27 +2,25 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     margin: 20px auto;
     max-width: 460px;
-}
+  }
 
-fieldset {
+  fieldset {
     padding: 10px 30px 0;
     margin-bottom: 20px;
-}
+  }
 
-legend {
+  legend {
     color: white;
     background: black;
     padding: 5px 10px;
-}
+  }
 
-fieldset>div {
+  fieldset > div {
     margin-bottom: 20px;
     display: flex;
-}
+  }
 
-button,
-label,
-input[type="text"] {
+  button, label, input[type="text"] {
     display: block;
     font-family: inherit;
     font-size: 100%;
@@ -32,28 +30,27 @@ input[type="text"] {
     width: 100%;
     padding: 5px;
     height: 30px;
-}
+  }
 
-input {
+  input {
     box-shadow: inset 1px 1px 3px #ccc;
     border-radius: 5px;
-}
+  }
 
-input:hover,
-input:focus {
+  input:hover, input:focus {
     background-color: #eee;
-}
+  }
 
-input[type="text"]:disabled {
-    background: #eee;
-    border: 1px solid #ccc;
-}
+  input[type="text"]:disabled {
+      background: #eee;
+      border: 1px solid #ccc;
+  }
 
-.disabled-label {
+  .disabled-label {
     color: #aaaa;
-}
+  }
 
-button {
+  button {
     width: 60%;
     margin: 0 auto;
-}
+  }
